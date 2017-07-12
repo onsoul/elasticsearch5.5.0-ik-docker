@@ -1,0 +1,12 @@
+cluster.name: bhb
+node.name: ${HOSTNAME}
+#network.host: 10.6.4.61
+http.host: 0.0.0.0
+http.port: 9200
+node.master: false
+node.data: true
+http.enabled: true
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+#discovery.zen.ping.unicast.hosts: ["10.6.4.60","10.6.4.61"]
+discovery.zen.minimum_master_nodes: 1
